@@ -1,0 +1,224 @@
+.article {
+  padding: 0;
+}
+
+.article.openness-article .article-header {
+  text-align: center;
+}
+
+.article .panel-content {
+  padding: 15px;
+}
+
+.article .article-header {
+  padding: 20px 15px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom: 1px solid #eeeeee;
+  color: #888888;
+  background-color: #fafafa;
+}
+
+.article .article-header h1.title {
+  padding-bottom: 15px;
+  margin: 0;
+  font-size: 24px;
+  color: #333333;
+}
+
+.article .article-header .meta .iconfont {
+  margin-right: 4px;
+  font-size: 14px;
+}
+
+.article .article-info {
+  padding: 0 0 15px 0;
+  margin: 0;
+  text-align: left;
+  list-style-type: none;
+}
+
+.article .article-info li {
+  float: left;
+  padding: 10px 0;
+  width: 50%;
+  border-bottom: 1px dotted #eeeeee;
+  font-weight: 700;
+}
+
+.article .article-info li span {
+  font-weight: normal;
+}
+
+.article .article-subtitle {
+  padding: 5px 15px;
+  margin: 20px 0;
+  border: 1px solid #f4f4f4;
+  border-left: 3px solid #005389;
+  font-size: 16px;
+  background-color: #fafafa;
+}
+
+.article .article-content {
+  line-height: 30px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  font-size: 16px;
+}
+
+.article .article-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.article .article-content a {
+  padding: 0 3px;
+  color: #005389;
+}
+
+.article .article-content a:hover {
+  color: #f27624;
+}
+
+.article .pager {
+  padding: 15px 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.article .pager .prev span,
+.article .pager .next span {
+  font-family: "Hiragino Sans GB", "SimSun";
+}
+
+.article .pager .prev a,
+.article .pager .next a {
+  padding: 6px 12px;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.article .pager .prev a:hover,
+.article .pager .next a:hover {
+  border-color: #005389;
+  color: #ffffff;
+  background-color: #005389;
+}
+
+.article .pager .prev {
+  float: left;
+}
+
+.article .pager .next {
+  float: right;
+}
+
+.article-share {
+  text-align: right;
+}
+
+.article-share:before, .article-share:after {
+  content: " ";
+  display: table;
+}
+
+.article-share:after {
+  clear: both;
+}
+
+.article-share .share-title {
+  float: right;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.article-share .social-share {
+  float: right;
+}
+
+.article-attachments {
+  padding-top: 15px;
+}
+
+.article-attachments .att-header {
+  padding-bottom: 0;
+  padding-left: 10px;
+  border-left: 4px solid #005389;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.article-attachments .att-header h4 {
+  margin: 0;
+}
+
+.article-attachments .attchment-list a {
+  display: block;
+  padding: 15px 0;
+  border-bottom: 1px dotted #eeeeee;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.article-attachments .attchment-list a:last-child {
+  border-bottom: none;
+}
+
+.article-attachments .attchment-list .iconfont {
+  margin-right: 4px;
+  color: #888888;
+}
+
+.article-attachment {
+  padding: 15px;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: rgba(0, 81, 137, 0.8);
+}
+
+.article-attachment .panel-header {
+  padding-bottom: 0;
+  padding-left: 10px;
+  border-left: 4px solid #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.article-attachment .attchment-list {
+  margin-top: 15px;
+}
+
+.article-attachment .attchment-list:before, .article-attachment .attchment-list:after {
+  content: " ";
+  display: table;
+}
+
+.article-attachment .attchment-list:after {
+  clear: both;
+}
+
+.article-attachment .attchment-list a {
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #585858;
+  background-color: #ffffff;
+}
+
+.article-attachment .attchment-list a:hover {
+  color: #ffffff;
+  background-color: #f27624;
+}
+
+.article-attachment .attchment-list .iconfont {
+  margin-right: 4px;
+}

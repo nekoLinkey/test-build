@@ -1,0 +1,128 @@
+<link rel="stylesheet" href="/static/html/interact/interact.css">
+<div class="wrapper clearfix container">
+	<div class="section">
+		<div class="location">
+			当前位置:
+			<a href="#">首页</a>
+			<span>&gt;&gt;</span>
+			<a href="#">互动交流</a>
+      <span>&gt;&gt;</span>
+      给我写信
+		</div>
+    <div class="panel interact-form">
+    	<div class="panel-content">
+    		<form action="">
+    			<div class="personal-information">
+    				<div class="interact-form-title clearfix">
+    					<span class="title-left pull-left">请填写您的个人信息</span>
+    					<span class="title-right pull-right">带"<span class="star-color">*</span>"为必填项</span>
+    				</div>
+    				<table class="interact-form-table table">
+    					<tr>
+    					 	<td><label class="font-bold" for="iteract-personal-name"><span class="star-color">*</span>姓名</label></td>
+    					 	<td><input type="text" id="iteract-personal-name" class="form-control" placeholder="请输入您的姓名（必填）"></td>
+    					 	<td><label class="font-bold" for="iteract-personal-tel">联系电话</label></td>
+    					 	<td><input type="text" id="iteract-personal-tel" class="form-control" placeholder="请输入您的联系电话"></td>
+    					</tr>
+    					<tr>
+    					 	<td><label class="font-bold" for="iteract-personal-email">电子信箱</label></td>
+    					 	<td><input type="text" id="iteract-personal-email" class="form-control" placeholder="请输入您的邮箱"></td>
+    					 	<td><label class="font-bold" for="iteract-personal-addr">联系地址</label></td>
+    					 	<td><input type="text" id="iteract-personal-addr" class="form-control" placeholder="请输入您的地址"></td>
+    					</tr>
+    					<!-- <tr>
+                 <td><label class="font-bold">证件类型</label></td>
+                 <td>
+                   <input type="radio" id="interact-id" name="card-style"><label for="interact-id">身份证</label>&emsp;
+                   <input type="radio" id="interact-officer" name="card-style"><label for="interact-officer">军官证</label>&emsp;
+                   <input type="radio" id="interact-passport" name="card-style"><label for="interact-passport">护照</label>&emsp;
+                   <input type="radio" id="interact-other" name="card-style"><label for="interact-other">其他</label>
+                 </td>
+                 <td><label class="font-bold" for="iteract-personal-card-num">证件号码</label></td>
+                 <td><input type="text" id="iteract-personal-card-num" class="form-control" placeholder="请输入您的证件号码"></td>
+              </tr> -->
+
+							<tr>
+    					 	<td><label class="font-bold">来件类型</label></td>
+    					 	<td colspan="3" class="letter-style">
+    					 		<input type="radio" id="interact-a" name="letter-style"><label for="interact-a">监狱执法</label>&emsp;
+    					 		<input type="radio" id="interact-b" name="letter-style"><label for="interact-b">强制戒毒</label>&emsp;
+    					 		<input type="radio" id="interact-c" name="letter-style"><label for="interact-c">社区矫正、安置帮教</label>&emsp;
+    					 		<input type="radio" id="interact-d" name="letter-style"><label for="interact-d">律师执业</label>&emsp;
+    					 		<input type="radio" id="interact-e" name="letter-style"><label for="interact-e" class="a">公证执业</label><br>
+    					 		<input type="radio" id="interact-f" name="letter-style"><label for="interact-f">司法鉴定</label>&emsp;
+    					 		<input type="radio" id="interact-g" name="letter-style"><label for="interact-g">人民调解</label>&emsp;
+    					 		<input type="radio" id="interact-h" name="letter-style"><label for="interact-h">法律援助</label>&emsp;
+    					 		<input type="radio" id="interact-i" name="letter-style" class="intertact-i"><label for="interact-i">意见建议</label>&emsp;
+    					 		<input type="radio" id="interact-j" name="letter-style"><label for="interact-j">其他</label>
+    					 	</td>
+    					</tr>	
+    					<tr>
+    					 	<td><label class="font-bold" for="iteract-personal-letter-name"><span class="star-color">*</span>信件标题</label></td>
+    					 	<td colspan="3"><input type="text" id="iteract-personal-letter-name" class="form-control" placeholder="您想提交的的信件标题（必填）"></td>
+    					</tr>
+    					<tr>
+    					 	<td class="font-bold"><label for="iteract-personal-letter-content"><span class="star-color ">*</span>信件内容</label></td>
+    					 	<td colspan="3"><textarea id="iteract-personal-letter-content" class="form-control" placeholder="请输入信件内容（必填）"></textarea></td>
+    					</tr>
+    					<!-- <tr>
+                 <td><label class="font-bold" for="iteract-personal-password"><span class="star-color ">*</span>查询密码</label></td>
+                 <td><input type="password" id="iteract-personal-password" class="form-control" placeholder="请输入您的查询密码（必填）"></td>
+                 <td class="font-bold"><label for="iteract-personal-repassword"><span class="star-color">*</span>确认密码</label></td>
+                 <td><input type="password" id="iteract-personal-repassword" class="form-control" placeholder="请再输入一遍密码（必填）"></td>
+              </tr> -->
+    					<tr>
+    					 	<td><label class="font-bold" for="iteract-personal-letter-verification"><span class="star-color">*</span>验证码</label></td>
+    					 	<td colspan="3">
+                  <div class="form-captcha clearfix">
+      					 		<img src="/static/images/ex-pic16.jpg" class="pull-left" alt="">
+      					 		<input type="text"class="form-control pull-left" placeholder="请输入图片中字符（必填）">
+      					 		<span class="pull-left"><a href="#">看不清？换一张</a></span>
+                  </div>
+    					 	</td>
+    					</tr>
+    					
+    					 
+    				</table>
+    			</div>
+    			<div class="information-input">
+    				<button class="information-submit button" type="submit" disabled>提交</button>
+    				<button class="information-reset button" type="reset">重置</button>
+    			</div>
+    			<a href="interact-form-feedback.html">信件提交反馈页（上线删除）</a>
+    		</form>
+    	</div>
+    </div>
+	</div>
+
+	<div class="aside">
+		<div class="inquire">
+			<div class="inquire-ie"></div>
+			<div class="inquire-header">信件状态查询</div>
+			<form action="" class="form-group">
+				<label>发件人姓名</label>
+				<input type="text" class="form-control" placeholder="请输入发件人姓名">
+				<label>查询密码</label>
+				<input type="text" class="form-control" placeholder="请输入6位数查询密码">
+				<div class="search-button">
+					<a href="#">查询密码是什么？</a>
+					<button class="button"><i class="iconfont icon-search"></i>开始查询</button>
+				</div>
+			</form>
+		</div>
+    <div class="panel interact-collect">
+      <div class="panel-header">
+        <h4 class="title">调查征集</h4>
+        <a href="#" class="more">查看全部<i class="iconfont icon-more"></i></a>
+      </div>
+      <div class="panel-content">
+        <ul class="list">
+          <li><div class="state">进行中</div><a href="#">征集市政府事实项目意见</a></li>
+          <li><div class="state">进行中</div><a href="#">司法部全国普法办开展普法工作三十周年征文活动</a></li>
+          <li><div class="state">进行中</div><a href="#">司法部全国普法办开展“我的调解故事”主题征集活动</a></li>
+          <li><div class="state over">已截至</div><a href="#">杨浦区司法局建立实施社区服刑人员“集中报到面询日”制度</a></li>
+        </ul>
+      </div>
+    </div>
+	</div>
+</div>

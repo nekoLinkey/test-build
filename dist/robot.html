@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh-cmn-Hans"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh-cmn-Hans"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-cmn-Hans"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-cmn-Hans"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>智能机器人 - Justice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+      <link rel="stylesheet" href="/static/html/robot/robot.css" />
+</head>
+<body>
+  <div>
+<div class="robot-km">
+  <div class="robot-header clearfix">
+    <a href="index.html" class="logo"><img src="/static/images/logo.png" alt=""></a>
+    <div class="pull-right title">
+      <a href="index.html" class="button">返回首页</a>
+      <h1>智能咨询机器人</h1>
+    </div>
+  </div>
+  <div class="law-query panel">
+    <div class="messages-wrapper">
+      <div class="received">
+        <div class="avatar"><img src="/static/images/timg.jpg" width="48" height="48"></div>
+        <div class="messages-content">
+          <div class="arrow">
+            <div class="arrow-line"></div>
+            <div class="arrow-bg"></div>
+          </div>
+          <div class="text">
+            您好，欢迎使用“上海司法行政网”智能机器人服务平台，我是智能机器 人希望能为您提供满意的咨询服务。
+          </div>
+        </div>
+      </div>
+      <div class="sent">
+        <div class="avatar"><img src="/static/images/avatar-m.png" width="48" height="48"></div>
+        <div class="messages-content">
+          <div class="arrow">
+            <div class="arrow-line"></div>
+            <div class="arrow-bg"></div>
+          </div>
+          <div class="text">
+            市司法局关于印发《2016年上海司法行政工作要点》的通知
+          </div>
+        </div>
+      </div>
+      <div class="received">
+        <div class="avatar"><img src="/static/images/timg.jpg" width="48" height="48"></div>
+        <div class="messages-content">
+          <div class="arrow">
+            <div class="arrow-line"></div>
+            <div class="arrow-bg"></div>
+          </div>
+          <div class="text">
+            您好，欢迎使用“上海司法行政网”智能机器人服务平台，我是智能机器 人希望能为您提供满意的咨询服务。
+          </div>
+        </div>
+      </div>
+      <div class="sent">
+        <div class="avatar"><img src="/static/images/avatar-m.png" width="48" height="48"></div>
+        <div class="messages-content">
+          <div class="arrow">
+            <div class="arrow-line"></div>
+            <div class="arrow-bg"></div>
+          </div>
+          <div class="text">
+            市司法局关于印发《2016年上海司法行政工作要点》的通知
+          </div>
+        </div>
+      </div>
+      <div class="received">
+        <div class="avatar"><img src="/static/images/timg.jpg" width="48" height="48"></div>
+        <div class="messages-content">
+          <div class="arrow">
+            <div class="arrow-line"></div>
+            <div class="arrow-bg"></div>
+          </div>
+          <div class="text">
+            您好，欢迎使用“上海司法行政网”智能机器人服务平台，我是智能机器 人希望能为您提供满意的咨询服务。
+          </div>
+        </div>
+      </div>
+      <div class="sent">
+        <div class="avatar"><img src="/static/images/avatar-m.png" width="48" height="48"></div>
+        <div class="messages-content">
+          <div class="arrow">
+            <div class="arrow-line"></div>
+            <div class="arrow-bg"></div>
+          </div>
+          <div class="text">
+            市司法局关于印发《2016年上海司法行政工作要点》的通知
+          </div>
+        </div>
+      </div>
+      <div class="time">刚才</div>
+      <div class="received">
+        <div class="avatar"><img src="/static/images/timg.jpg" width="48" height="48"></div>
+        <div class="messages-content">
+          <div class="arrow">
+            <div class="arrow-line"></div>
+            <div class="arrow-bg"></div>
+          </div>
+          <div class="text">
+            您好，欢迎使用“上海司法行政网”智能机器人服务平台，我是智能机器 人希望能为您提供满意的咨询服务。
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="send">
+      <textarea name="" id="index_km_text" placeholder="请尝试输入两个字，如：酒驾"></textarea>
+      <input type="hidden" class="form-control" id="index_km_knowledgeId">
+      <input type="submit" class="button" value="发送">
+    </div>
+  </div>
+</div>
+  </div>
+  <script src="/static/lib/mod.js"></script>
+<script>/*resourcemap*/
+require.resourceMap({
+  "res": {
+    "components/jquery/jquery": {
+      "url": "/static/components/jquery/jquery.js",
+      "type": "js"
+    },
+    "modules/js/jquery.slimscroll.min": {
+      "url": "/static/js/jquery.slimscroll.min.js",
+      "type": "js",
+      "deps": [
+        "components/jquery/jquery"
+      ]
+    }
+  },
+  "pkg": {}
+});
+
+
+  !function(){
+    require(['components/jquery/jquery','modules/js/jquery.slimscroll.min'], function($, slimScroll){
+      $('.messages-wrapper').slimScroll({
+        height: '430px'
+      })
+    })
+  }();
+
+  // !function(){
+  //   require(['jquery', 'js/bloodhound.min', 'js/typeahead.jquery.min', 'js/handlebars'], function($, Bloodhound, typeahead, Handlebars){
+
+  //     var kmTypeahead = new Bloodhound({
+  //       datumTokenizer: function (datum) {
+  //           return Bloodhound.tokenizers.whitespace(datum.name);
+  //       },
+  //       queryTokenizer: Bloodhound.tokenizers.whitespace,
+  //       remote: {
+  //         url: 'http://192.168.10.106:8080/service/rest/km.LogCat/collection/suggestion?partWord=%QUERY',
+  //         filter: function (data) {
+  //           return $.map(data, function (km) {
+  //             return {
+  //               id: km.id,
+  //               name: km.name,
+  //             };
+  //           });
+  //         }
+  //       }
+  //     });
+
+  //     kmTypeahead.initialize();
+
+  //     $('#index_km_text').typeahead({
+  //       highlight : true
+  //     }, {
+  //         displayKey: 'name',
+  //         source: kmTypeahead.ttAdapter(),
+         
+  //     }).on('typeahead:selected', onclick).on('typeahead:autocompleted', onclick);
+
+  //     function onclick(event, data) {
+  //       $('#index_km_knowledgeId').val(data.id);
+  //     };
+
+  //     $('.twitter-typeahead').css('display', '');
+  
+  //     $("#index_km_btn").click(function(){
+  //       var kid=$('#index_km_knowledgeId').val();
+  //       if(kid){
+          
+  //       }else{
+          
+  //       }
+  //     });
+
+  //   })
+  // }();
+</script>
+</body>
+</html>

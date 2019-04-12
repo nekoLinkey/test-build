@@ -1,0 +1,204 @@
+.interact {
+  margin-top: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #dad9d9;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.interact .title-group {
+  position: relative;
+  width: 895px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.interact .title-group h3 {
+  float: left;
+  margin: 0;
+  line-height: 1;
+  font-size: 18px;
+  color: #005389;
+}
+
+.interact .title-group h3 a {
+  color: #005389;
+}
+
+.interact .title-group h3 a:hover {
+  color: #0062a3;
+}
+
+.interact .title-group .title {
+  width: 313px;
+}
+
+.interact .title-group .title:before, .interact .title-group .title:after {
+  content: " ";
+  display: table;
+}
+
+.interact .title-group .title:after {
+  clear: both;
+}
+
+.interact .title-group .title h4 {
+  position: absolute;
+  bottom: -1px;
+  padding-bottom: 10px;
+  float: left;
+  border-bottom: 1px solid #005389;
+  margin: 0 0 0 40px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #005389;
+}
+
+.interact .title-group .title h4 a {
+  color: #005389;
+}
+
+.interact .title-group .title h4 a:hover {
+  color: #0062a3;
+}
+
+.interact .title-group .title a.more {
+  float: right;
+  font-size: 15px;
+  color: #7e7e7e;
+}
+
+.interact .title-group .title a.more .iconfont {
+  font-size: 14px;
+}
+
+.interact .title-group .title a.more:hover {
+  color: #005389;
+}
+
+.interact .title-group .title i {
+  margin-left: 5px;
+}
+
+.interact .title-group .second-title {
+  width: 510px;
+}
+
+.interact .title-group .second-title h4 {
+  margin: 0 0 0 20px;
+}
+
+.interact .content .list {
+  padding-top: 10px;
+  width: 385px;
+  font-size: 15px;
+}
+
+.interact .interview {
+  margin: 0 0 0 20px;
+  width: 500px;
+}
+
+.interact dl {
+  width: 340px;
+  margin-top: 0;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.interact dl img {
+  display: block;
+  float: left;
+}
+
+.interact dl dt {
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+  color: #585858;
+}
+
+.interact dl dt:hover {
+  color: #005389;
+}
+
+.interact dl dd {
+  margin-top: 16px;
+  margin-left: 0;
+  font-size: 15px;
+  color: #686868;
+}
+
+.interact dl dd a.more {
+  float: right;
+  color: #005389;
+}
+
+.interact dl dd a.more:hover {
+  color: #f27624;
+}
+
+.interact .portal {
+  width: 255px;
+  height: 165px;
+  overflow: hidden;
+}
+
+.interact .portal .portal-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 275px;
+  height: 175px;
+}
+
+.interact .portal li {
+  float: left;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.interact .portal a {
+  display: block;
+  padding-top: 3px;
+  width: 75px;
+  height: 75px;
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  text-align: center;
+  color: #005389;
+}
+
+.interact .portal a:hover {
+  color: white;
+  border-color: #005389;
+  background-color: #005389;
+}
+
+.interact .portal a span {
+  display: block;
+}
+
+.interact .portal .iconfont {
+  font-size: 30px;
+}
+
+.fllow-modal .modal-dialog {
+  margin-top: 300px;
+}
+
+.fllow-modal .modal-header {
+  background-color: #fafafa;
+}
+
+.fllow-modal .modal-title {
+  font-weight: normal;
+}
+
+.fllow-modal .modal-content {
+  text-align: center;
+}

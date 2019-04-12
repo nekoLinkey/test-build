@@ -1,0 +1,66 @@
+.lt-ie9 .alerts {
+  display: block;
+}
+
+.lt-ie9 .search-content {
+  background-color: #fff;
+  filter: Alpha(opacity=30);
+  *zoom: 1;
+}
+
+.lt-ie9 .search-content .form-group {
+  position: relative;
+}
+
+.lt-ie9 .search-content .keyword {
+  position: relative;
+}
+
+.lt-ie9 .picnews .banner .num li {
+  background-color: #000;
+  filter: Alpha(opacity=60);
+}
+
+.lt-ie9 .picnews .banner .text {
+  background-color: #005389;
+  filter: Alpha(opacity=80);
+  *zoom: 1;
+}
+
+.lt-ie9 .footer .links .items {
+  width: 280px;
+}
+
+.lt-ie9 .footer .links .items select {
+  padding-right: 0;
+}
+
+.lt-ie9 .prompt {
+  position: relative;
+  background-color: #005389;
+  filter: Alpha(opacity=80);
+}
+
+.lt-ie9 .news-tab .tab-head {
+  background-color: #fff;
+  filter: Alpha(opacity=80);
+}
+
+.lt-ie9 .location {
+  background-color: #005389;
+  filter: Alpha(opacity=90);
+}
+
+.lt-ie9 .inquire {
+  background-color: #005389;
+  filter: Alpha(opacity=90);
+}
+
+.lt-ie9 .oa-matters a {
+  background-color: #fff;
+  filter: Alpha(opacity=60);
+}
+
+.lt-ie9 .law-query .send textarea {
+  border-style: ridge;
+}

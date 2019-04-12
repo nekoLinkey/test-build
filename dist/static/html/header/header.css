@@ -1,0 +1,310 @@
+.header .wrapper {
+  position: relative;
+}
+
+.header .logo {
+  margin-top: 30px;
+  display: block;
+  width: 400px;
+  height: 79px;
+  font: "0/0" a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  background: url(/static/images/logo_bg.png) center bottom no-repeat;
+}
+
+.header .sh-slogan {
+  position: absolute;
+  right: 15px;
+  top: 75px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.header .topnav {
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.header .topnav:before, .header .topnav:after {
+  content: " ";
+  display: table;
+}
+
+.header .topnav:after {
+  clear: both;
+}
+
+.header .topnav li {
+  float: left;
+}
+
+.header .topnav li.li-spacing {
+  display: inline-block;
+  width: 2px;
+  height: 39px;
+  background: url(/static/images/topnav-spacing.png) left top no-repeat;
+}
+
+.header .topnav a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.header .topnav a:hover {
+  color: #005389;
+}
+
+.header.page {
+  margin-bottom: 51px;
+}
+
+.index-pagenav {
+  display: none;
+}
+
+.pagenav {
+  padding: 0;
+  margin: 70px 0 0 0;
+  list-style-type: none;
+}
+
+.pagenav:before, .pagenav:after {
+  content: " ";
+  display: table;
+}
+
+.pagenav:after {
+  clear: both;
+}
+
+.pagenav li {
+  float: left;
+}
+
+.pagenav li.active a {
+  color: #005389;
+}
+
+.pagenav a {
+  display: block;
+  padding: 5px 12px;
+  margin: 0 5px;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.pagenav a:hover {
+  color: #005389;
+}
+
+.pagenav a i.iconfont {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.search {
+  padding: 16px 0 80px 0;
+}
+
+.search .slogan {
+  margin: 0 auto 24px auto;
+  font: "0/0" a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  width: 291px;
+  height: 73px;
+  background: url(/static/images/slogan.png) center top no-repeat;
+}
+
+.search .search-content {
+  margin: 0 auto;
+  padding: 15px;
+  padding-bottom: 12px;
+  width: 680px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.search .form-control {
+  float: left;
+  width: 490px;
+  height: 40px;
+  border: none;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  font-size: 18px;
+}
+
+.search .submit {
+  float: left;
+  width: 50px;
+  height: 40px;
+  border: none;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  color: #ffffff;
+  background-color: #005389;
+}
+
+.search .advanced {
+  padding: 0;
+  width: 90px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #005389;
+}
+
+.search .keyword {
+  padding: 12px 0 0 0;
+  margin: 0;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.search .keyword dt {
+  float: left;
+}
+
+.search .keyword a {
+  padding: 0 3px;
+  color: #005389;
+}
+
+.search .keyword a:hover {
+  color: #9e0001;
+}
+
+.header-red-wrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  background: #bf0c0d;
+}
+
+.header-red-wrap .menu-wrap {
+  width: 1190px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.header-red-wrap .logo-link {
+  width: 172px;
+  height: 50px;
+  margin-right: 80px;
+  float: left;
+  display: block;
+  background-size: 100% 100%;
+}
+
+.header-red-wrap .menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-red-wrap .menu-list .list {
+  display: inline-block;
+  margin-right: 40px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.header-red-wrap .menu-list a {
+  color: #fff;
+}
+
+.header-red-wrap .menu-list a:hover {
+  color: #fcae28;
+}
+
+.header-red-wrap .search-wrap {
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.header-red-wrap .search-wrap .menu-wrap {
+  height: 90px;
+  border-bottom: 1px #ddd solid;
+}
+
+.header-red-wrap .search-wrap .zw-link {
+  margin-top: 28px;
+  width: 161px;
+  height: 34px;
+  display: block;
+  overflow: hidden;
+  background-size: 100% 100%;
+}
+
+.header-red-wrap .search-wrap .link-name {
+  width: 360px;
+  margin: 32px auto auto 20px;
+}
+
+.header-red-wrap .search-wrap .link-name .iconfont {
+  margin-right: 5px;
+  font-weight: 400;
+  color: #fcae28;
+  font-size: 20px;
+}
+
+.header-red-wrap .search-wrap .link-name span {
+  font-size: 20px;
+  color: #333;
+}
+
+.header-red-wrap .search-wrap .common-filterbar-search {
+  margin-top: 20px;
+}
+
+.header-red-wrap .search-wrap .common-filterbar-searchbox {
+  position: relative;
+  width: 598px;
+  height: 50px;
+  border: 1px #eb4b3f solid;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.header-red-wrap .search-wrap .common-filterbar-searchbox > input {
+  height: 48px;
+  width: 100%;
+  padding: 0 20% 0 10px;
+  line-height: 48px;
+  border: none;
+  background: url(http://zwdt.sh.gov.cn/zwdtSW/dphead/common/img/ico-header-search-input.png) no-repeat 85% 12px;
+}
+
+.header-red-wrap .search-wrap .common-filterbar-searchbox > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 48px;
+  width: 12%;
+  border: none;
+  background: #eb4b3f url(http://zwdt.sh.gov.cn/zwdtSW/dphead/common/img/ico-header-search-button.png) no-repeat center 15px;
+}

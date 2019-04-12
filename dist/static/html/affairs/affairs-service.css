@@ -1,0 +1,105 @@
+.affairs-service-wrap .panel-header {
+  width: 100%;
+  height: auto;
+}
+
+.affairs-service-wrap .panel-header .title {
+  display: inline-block;
+  margin: 0;
+  padding: 9px 0 0 0;
+  border-top: 4px solid #005389;
+  color: #005389;
+  font-size: 18px;
+}
+
+.affairs-service-wrap .affairs-inner {
+  margin-bottom: 15px;
+  width: 100%;
+  height: auto;
+}
+
+.affairs-service-wrap .inner-sider-left {
+  margin-right: 15px;
+  padding: 0 15px 27px 15px;
+  width: 360px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.affairs-service-wrap .inner-sider-left .affairs-inner-body {
+  padding-top: 15px;
+  width: 100%;
+  height: auto;
+}
+
+.affairs-service-wrap .inner-sider-left .affairs-link {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  width: calc(50% - 1px);
+  cursor: pointer;
+  color: #005389;
+  background-color: #EFF6FF;
+}
+
+.affairs-service-wrap .inner-sider-left .affairs-link:hover, .affairs-service-wrap .inner-sider-left .affairs-link.active {
+  background-color: #CEE3FF;
+}
+
+.affairs-service-wrap .inner-sider-left .affairs-link:nth-child(2n) {
+  margin-right: 0;
+}
+
+.affairs-service-wrap .inner-sider-left .affairs-link:nth-child(3), .affairs-service-wrap .inner-sider-left .affairs-link:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.affairs-service-wrap .inner-sider-left .affairs-link .icon-wrap {
+  padding: 20px 0 15px;
+  text-align: center;
+}
+
+.affairs-service-wrap .inner-sider-left .affairs-link .iconfont {
+  line-height: 1;
+  font-size: 32px;
+}
+
+.affairs-service-wrap .inner-sider-left .affairs-link .text {
+  padding-bottom: 24px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.affairs-service-wrap .inner-sider-right {
+  padding: 0 15px 15px 15px;
+  width: calc(100% - 375px);
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.affairs-service-wrap .inner-sider-right .sider-right-body {
+  padding-top: 14px;
+}
+
+.affairs-service-wrap .affairs-bottom-wrap {
+  margin-bottom: 70px;
+  width: 100%;
+  height: auto;
+}
+
+.affairs-service-wrap .affairs-bottom-wrap .affairs-img-link {
+  display: block;
+  margin-right: 15px;
+  width: calc((100% - 45px)/4);
+  height: 72px;
+  background-color: #ccc;
+  border-radius: 5px;
+  background-size: cover;
+}
+
+.affairs-service-wrap .affairs-bottom-wrap .affairs-img-link:last-child {
+  margin-right: 0;
+}
