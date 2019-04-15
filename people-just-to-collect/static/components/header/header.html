@@ -1,0 +1,134 @@
+<link rel="stylesheet" href="/prototype/people-just-to-collect/static/components/header/header.css" />
+<div class="draft-header">
+  <div class="wrapper head">
+    <div class="head-logo pull-left"></div>
+    <div class="head-r pull-right">
+      <div class="head-icon clearfix">
+        <a href="javascript:;" class="head-icon-item wb"></a>
+        <a href="javascript:;" class="head-icon-item wx"></a>
+        <a href="javascript:;" class="head-icon-item tl"></a>
+        <span class="pull-left"
+          >[<a class="font" href="javascript:;">简</a>/<a
+            class="font"
+            href="javascript:;"
+            >繁</a
+          >]</span
+        >
+      </div>
+      <div class="head-form clearfix">
+        <input
+          class="pull-left head-input"
+          type="text"
+          placeholder="请输入关键字"
+        />
+        <i class="pull-left iconfont icon-sousuo1"></i>
+      </div>
+    </div>
+    <div class="login-link-nav">
+      <a class="login-a" href="#myModal" data-toggle="modal">欢迎您：陕西司法厅用户</a>
+      <a href="javascript:;">退出登录</a>
+    </div>
+  </div>
+</div>
+<div class="head-nav">
+  <ul class="menu-nav wrapper">
+    <li><a class="active" href="./index.html">首页</a></li>
+    <li style="z-index: 100;" class="borderl borderr">
+      <a href="javascript:;" target="_blank"
+        >司法厅<img src="" class="downarrowclass" style="border:0;"
+      /></a>
+    </li>
+    <li style="z-index: 99;" class="borderr">
+      <a href="#">厅长<img src="" class="downarrowclass" style="border:0;"/></a>
+    </li>
+    <li style="z-index: 98;" class="borderr">
+      <a href="javascript:;"
+        >动态<img src="" class="downarrowclass" style="border:0;"
+      /></a>
+    </li>
+    <li style="z-index: 97;" class="borderr">
+      <a href="javascript:;" target="_blank"
+        >政务公开<img src="" class="downarrowclass" style="border:0;"
+      /></a>
+    </li>
+    <li style="z-index: 96;" class="borderr">
+      <a href="javascript:;" target="_blank"
+        >政府法制<img src="" class="downarrowclass" style="border:0;"
+      /></a>
+    </li>
+    <li style="z-index: 95;" class="borderr">
+      <a href="javascript:;" target="_blank"
+        >法律服务<img src="" class="downarrowclass" style="border:0;"
+      /></a>
+    </li>
+    <li style="z-index: 94;" class="borderr">
+      <a href="javascript:;"
+        >司法行政<img src="" class="downarrowclass" style="border:0;"
+      /></a>
+    </li>
+    <li style="z-index: 93;" class="borderr">
+      <a href="javascript:;"
+        >机关党建<img src="" class="downarrowclass" style="border:0;"
+      /></a>
+    </li>
+    <li style="z-index: 92; " class="borderr">
+      <a href="javascript:;"
+        >互动交流<img src="" class="downarrowclass" style="border:0;"
+      /></a>
+    </li>
+  </ul>
+</div>
+<div class="modal fade ex_modal" id="myModal">
+  <div class="modal-dialog login-wrap">
+    <div class="modal-content login-box">
+      <a href="javascript:;" class="login-close" data-dismiss="modal">
+       x
+      </a>
+      <div class="login-header">请登录</div>
+      <form action="javascript:;">
+        <div class="form-item">
+          <div class="login-input-wrap enter-phone clearfix">
+            <div class="pull-left select">
+              <select style="width: 100%;height: 100%;">
+                <option value="+85">+85</option>
+                <option value="+86">+86</option>
+                <option value="+87">+87</option>
+              </select>
+            </div>
+            <div class="pull-left input-box">
+              <input class="login-input" type="tel" placeholder="请输入手机" />
+            </div>
+          </div>
+        </div>
+        <div class="form-item clearfix">
+          <div class="login-input-wrap code-wrap pull-left">
+            <div class="pull-left login-label">验证码</div>
+            <div class="pull-left input-box">
+              <input class="login-input" type="text" placeholder="399210" />
+            </div>
+          </div>
+          <a class="pull-right get-code" href="javascript:;">获取验证码</a>
+        </div>
+        <div class="hint">温馨提示：未注册XX账号的手机号，登录时将自动注册。</div>
+        <button class="login-btn" type="button">实名登录</button>
+        <div class="visitor-login-wrap">
+            <a class="visitor-login" href="javascript:;">游客登录</a>
+        </div>
+        <div class="third-party">第三方账号登录</div>
+        <div class="login-way-wrap">
+          <a class="login-way active" href="javascript:;">
+            <i class="iconfont icon-weixin-copy"></i>
+          </a>
+          <a class="login-way" href="javascript:;">
+            <i class="iconfont icon-alipay"></i>
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  var $, jQuery;
+  $ = jQuery = require('node_modules/jquery/dist/jquery');
+  require('node_modules/bootstrap/js/modal');
+</script>

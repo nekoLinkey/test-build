@@ -1,0 +1,142 @@
+<link rel="stylesheet" href="/prototype/people-just-to-collect/static/pages/draft/full-draft.css" />
+<div class="wrapper activity-draft">
+  <div class="darft-crumbs">
+    <i class="iconfont icon-dingwei"></i>
+    <a href="./index.html">民意征集</a>
+    <span>-></span>
+    <a href="javascript:;">发表整体意见</a>
+  </div>
+  <div
+  style="height: 100px; margin-bottom: 20px; background: url(/prototype/people-just-to-collect/static/assets/images/banner-center.jpg) center top no-repeat;"
+></div>
+  <div class="darft-activity-wrap clearfix">
+    <div class="pull-left activity-entry">
+      <div class="entry-title">征集活动相关入口</div>
+      <div class="entry-link-wrap">
+         <a class="entry-link" href="./draft-explain.html">草案全文</a>
+         <a class="entry-link" href="./full-draft.html">草案说明</a>
+         <a class="entry-link" href="./overall-opinion.html">民意征集活动</a>
+         <a class="entry-link active" href="./activity-draft.html">发表整体意见</a>
+         <a class="entry-link" href="./draft-statistics.html">活动统计情况计</a>
+      </div>
+    </div>
+    <div class="pull-right activity-content">
+      <div class="full-draft-content">
+        <h3 class="h3">
+          《陕西省测绘条例（修订草案）》（第一次征求意见稿）》草案说明草案说明草案说明草案说明
+        </h3>
+        <div class="subhead">
+          <span>征集意见单位：陕西省发展和改革委员会</span>
+          <span>起止时间： 2019年1月1日 至 2019年11月11日</span>
+          <span>参与人数：9999</span>
+        </div>
+        <div class="topic-wrap">
+          <div class="topic-title">
+            1.[多选题]您是从哪个渠道了解本次立法征集意见的？
+          </div>
+          <div class="options clearfix checkbox-wrap">
+            <div class="pull-left option-item active">
+              <div class="ball"></div>
+              <span class="answer">报纸</span>
+            </div>
+            <div class="pull-left option-item">
+              <div class="ball"></div>
+              <span class="answer">政府网站</span>
+            </div>
+            <div class="pull-left option-item">
+              <div class="ball"></div>
+              <span class="answer">小程序</span>
+            </div>
+            <div class="pull-left option-item">
+              <div class="ball"></div>
+              <span class="answer">APP</span>
+            </div>
+          </div>
+        </div>
+        <div class="topic-wrap">
+          <div class="topic-title">
+            2.您所居住的小区在哪个市？
+          </div>
+          <div class="options clearfix  radio-wrap">
+            <div class="pull-left option-item">
+              <div class="ball"></div>
+              <span class="answer">西安</span>
+            </div>
+            <div class="pull-left option-item">
+              <div class="ball"></div>
+              <span class="answer">宝鸡</span>
+            </div>
+            <div class="pull-left option-item">
+              <div class="ball"></div>
+              <span class="answer">咸阳</span>
+            </div>
+            <div class="pull-left option-item">
+              <div class="ball"></div>
+              <span class="answer">铜川</span>
+            </div>
+          </div>
+        </div>
+        <div class="topic-wrap">
+          <div class="topic-title">
+            3.您所在的小区物业是否符合规定？
+          </div>
+          <div class="options clearfix radio-wrap">
+            <div class="pull-left option-item">
+              <div class="ball"></div>
+              <span class="answer">是</span>
+            </div>
+            <div class="pull-left option-item">
+              <div class="ball"></div>
+              <span class="answer">否</span>
+            </div>
+          </div>
+        </div>
+        <div class="topic-wrap">
+          <div class="topic-title">
+            4.您对本次立法民意征集的活动是否满意？
+          </div>
+          <div class="options clearfix radio-wrap">
+            <div class="pull-left option-item">
+              <div class="ball"></div>
+              <span class="answer">满意</span>
+            </div>
+            <div class="pull-left option-item">
+              <div class="ball"></div>
+              <span class="answer">不满意</span>
+            </div>
+          </div>
+        </div>
+        <div class="topic-wrap">
+          <div class="topic-title">
+            5.您对本次物业立法民意征集是否还有其它意见或建议？
+          </div>
+          <div class="textarea-wrap"></div>
+          <textarea
+            class="textarea"
+            placeholder="请输入您的意见或者建议"
+          ></textarea>
+        </div>
+        <div class="btn-wrap">
+          <button class="draft-btn" type="button">提交</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+    var main = require('src/main');
+    var $ = require('node_modules/jquery/dist/jquery');
+    $(function(){
+     $('.radio-wrap .option-item').on('click',function() {
+       $(this).addClass('active').siblings().removeClass('active');
+     })
+     $('.checkbox-wrap .option-item').on('click',function() {
+       if ($(this).hasClass('active')) {
+         $(this).removeClass('active');
+       } else {
+         $(this).addClass('active');
+       }
+     });
+    })
+  </script>
+

@@ -1,0 +1,17 @@
+@font-face{font-family:iconfont;src:url(/prototype/people-just-to-collect/static/assets/fonts/iconfont.eot);src:url(/prototype/people-just-to-collect/static/assets/fonts/iconfont.eot?) format("embedded-opentype"),url(/prototype/people-just-to-collect/static/assets/fonts/iconfont.woff) format("woff"),url(/prototype/people-just-to-collect/static/assets/fonts/iconfont.ttf) format("truetype"),url(/prototype/people-just-to-collect/static/assets/fonts/iconfont.svg) format("svg")}
+.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.icon-sanjiaoright:before{content:"\e6b7"}
+.icon-alipay:before{content:"\e65f"}
+.icon-weixin-copy:before{content:"\e654"}
+.icon-sousuo1:before{content:"\e615"}
+.icon-left:before{content:"\e65c"}
+.icon-right:before{content:"\e65e"}
+.icon-dingwei:before{content:"\e667"}
+.icon-xiaoxi:before{content:"\e618"}
+.icon-tubiaozhizuo-:before{content:"\e607"}
+.icon-duibi1:before{content:"\e786"}
+.icon-fandui:before{content:"\e635"}
+.icon-zhichi:before{content:"\e637"}
+.backup{z-index:10000;position:fixed;box-sizing:border-box;top:20px;left:20px;display:block;width:50px;height:50px;line-height:50px;border-radius:50%;text-align:center;color:#fff;background-color:rgba(0,0,0,.2)}
+.backup .iconfont{font-size:30px}
+.backup:hover{color:#fff;background-color:rgba(0,0,0,.4)}
