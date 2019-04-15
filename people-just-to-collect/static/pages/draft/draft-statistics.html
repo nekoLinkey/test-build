@@ -1,0 +1,129 @@
+<link rel="stylesheet" href="/prototype/people-just-to-collect/static/pages/draft/full-draft.css" />
+<div class="wrapper activity-draft">
+  <div class="darft-crumbs">
+    <i class="iconfont icon-dingwei"></i>
+    <a href="./index.html">民意征集</a>
+    <span>-></span>
+    <a href="./draft-statistics.html">活动统计情况计</a>
+  </div>
+  <div
+    style="height: 100px; margin-bottom: 20px; background: url(/prototype/people-just-to-collect/static/assets/images/banner-center.jpg) center top no-repeat;"
+  ></div>
+  <div class="darft-activity-wrap clearfix">
+    <div class="pull-left activity-entry">
+      <div class="entry-title">征集活动相关入口</div>
+      <div class="entry-link-wrap">
+        <a class="entry-link" href="./draft-explain.html">草案全文</a>
+        <a class="entry-link" href="./full-draft.html">草案说明</a>
+        <a class="entry-link" href="./overall-opinion.html">民意征集活动</a>
+        <a class="entry-link" href="./activity-draft.html">发表整体意见</a>
+        <a class="entry-link active" href="./draft-statistics.html">活动统计情况计</a>
+      </div>
+    </div>
+    <div class="pull-right activity-content">
+      <div class="full-draft-content">
+        <h3 class="h3">
+          《陕西省测绘条例（修订草案）》（第一次征求意见稿）》草案说明草案说明草案说明草案说明
+        </h3>
+        <div class="subhead">
+          <span>征集意见单位：陕西省发展和改革委员会</span>
+          <span>起止时间： 2019年1月1日 至 2019年11月11日</span>
+          <span>参与人数：9999</span>
+        </div>
+        <p>
+          本次民意征集活动与2019年发布相关征集活动公告，并与2019年1月1日开始民意征集，截止至2019年10月10日，本次民意征集活动预览人数为9999人，实际参与人数为8888人，收集的意见条数为7833条，其中小程序来源渠道的用户数最多，占XX%。
+        </p>
+        <div class="draft-chart-wrap">
+          <div class="chart-bar">
+            <div id="bar1"></div>
+          </div>
+        </div>
+        <p>
+          本次民意征集活动中，支持数最高的为第N条，总计XXXX人支持。反对数最高的为第N条，总计XXXX人反对。
+        </p>
+        <div class="draft-chart-wrap">
+          <div class="chart-bar">
+            <div id="bar2"></div>
+          </div>
+        </div>
+        <p>
+          本次民意征集活动中，支持数最高的为第N条，总计XXXX人支持。反对数最高的为第N条，总计XXXX人反对。
+        </p>
+        <div class="draft-chart-wrap">
+          <div class="chart-pie">
+            <div id="pie1"></div>
+          </div>
+        </div>
+        <p>
+          本次民意征集活动中，支持数最高的为第N条，总计XXXX人支持。反对数最高的为第N条，总计XXXX人反对。
+        </p>
+        <div class="draft-chart-wrap">
+          <div class="chart-pie">
+            <div id="pie2"></div>
+          </div>
+        </div>
+        <p>
+          本次民意征集活动中，支持数最高的为第N条，总计XXXX人支持。反对数最高的为第N条，总计XXXX人反对。
+        </p>
+        <div class="draft-chart-wrap">
+          <div class="chart-pie">
+            <div id="pie3"></div>
+          </div>
+        </div>
+        <p>
+          本次民意征集活动中，支持数最高的为第N条，总计XXXX人支持。反对数最高的为第N条，总计XXXX人反对。
+        </p>
+        <div class="draft-chart-wrap">
+          <div class="chart-pie">
+            <div id="pie4"></div>
+          </div>
+        </div>
+        <p>
+          本次民意征集活动中，支持数最高的为第N条，总计XXXX人支持。反对数最高的为第N条，总计XXXX人反对。
+        </p>
+        <div class="draft-chart-wrap">
+          <div class="chart-pie">
+            <div id="pie5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var G2 = require('node_modules/@antv/g2/build/g2');
+  var main = require('src/main');
+  const bardata1 = [
+    { genre: '第一条', sold: 275 },
+    { genre: '第二条', sold: 115 },
+    { genre: '第三条', sold: 120 },
+    { genre: '第四条', sold: 350 },
+    { genre: '第五条', sold: 150 }
+  ];
+  const bardata2 = [
+    { genre: '第五条', sold: 275 },
+    { genre: '第四条', sold: 215 },
+    { genre: '第三条', sold: 120 },
+    { genre: '第二条', sold: 350 },
+    { genre: '第一条', sold: 150 }
+  ];
+  const piedata2 = [
+    { genre: '第一条', sold: 275 },
+    { genre: '第二条', sold: 115 },
+    { genre: '第三条', sold: 300 },
+    { genre: '第四条', sold: 350 },
+    { genre: '第五条', sold: 500 }
+  ];
+  let pieColor1 = ['#339BFA', '#26C9C9', '#FDD55C', '#26CB7A', '#5D4CC9'];
+  let pieColor2 = ['#339BFA', '#26C9C9', '#FDD55C', '#26CB7A', '#5D4CC9'];
+  let pieColor3 = ['#339BFA', '#FDD55C', '#26CB7A', '#5D4CC9', '#26C9C9'];
+  let pieColor4 = ['#339BFA', '#26C9C9', '#FDD55C', '#26CB7A', '#5D4CC9'];
+  let pieColor5 = ['#339BFA', '#26C9C9', '#26CB7A', '#FDD55C', '#5D4CC9'];
+  main.bar.init('bar1', bardata1, '#366AE1', 200);
+  main.bar.init('bar2', bardata2, '#FEA702', 200);
+  main.pie.init('pie1', piedata2, pieColor1, 200);
+  main.pie.init('pie2', piedata2, pieColor2, 200);
+  main.pie.init('pie3', piedata2, pieColor3, 200);
+  main.pie.init('pie4', piedata2, pieColor4, 200);
+  main.pie.init('pie5', piedata2, pieColor5, 200);
+</script>
