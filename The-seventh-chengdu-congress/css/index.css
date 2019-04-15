@@ -1,0 +1,490 @@
+/* 首页版心定义 */
+/* .wrapper {
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+} */
+
+/* 首页背景图，放置在body上 */
+.index {
+  padding-top: 142px;
+  min-width: 1200px;
+  background-image: url(../images/background_seat.jpg);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo {
+  margin-bottom: -46px;
+  width: 124px;
+  height: 124px;
+}
+
+.logo-title {
+  height: 290px;
+}
+
+/* 首页签到人数及座位表 */
+.index-header {
+  display: flex;
+  margin-top: 120px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #fff;
+}
+
+.index-header-people {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 286px;
+}
+
+.index-header-people-item {
+  font-weight: bold;
+  text-align: center;
+  background-image: url(../images/frame.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.index-header-people-item+.index-header-people-item {
+  margin-top: 40px;
+}
+
+.index-header-people-item::before {
+  display: block;
+  content: attr(data-title);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 26px;
+  color: #fff;
+  text-align: center;
+}
+
+.index-header-people-item::after {
+  display: block;
+  content: attr(data-num);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 70px;
+  border-left: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid transparent;
+  box-sizing: border-box;
+}
+
+.index-header-people-item.lawyer::before {
+  background-color: #be2629;
+}
+
+.index-header-people-item.lawyer::after {
+  color: #be2629;
+  border-color: #be2629;
+}
+
+.index-header-people-item.guest::before {
+  background-color: #06398a;
+}
+
+.index-header-people-item.guest::after {
+  color: #06398a;
+  border-color: #06398a;
+}
+
+/* 首页座位表 */
+.index-header-seat {
+  padding-left: 100px;
+  padding-right: 25px;
+  flex: 1;
+}
+
+.index-header-seat-text {
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* 座位表的椅子 */
+.index-header-seat-chairs {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+/* 座位的字体图标设置 */
+.index-header-seat-chair-item {
+  padding-top: 4px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* 主席台前的座位 */
+.index-header-seat-chairs.front {
+  flex-wrap: wrap;
+  width: calc(100% / 30 * 10);
+  box-sizing: border-box;
+}
+
+.index-header-seat-chairs.front .index-header-seat-chair-item {
+  width: calc(100% / 10);
+}
+
+.index-header-seat-chairs.front+.index-header-seat-chairs.num {
+  padding-top: 5px;
+}
+
+/* 座位表的数字标识, counter-reset 用来计数,自增*/
+.index-header-seat-chairs.num {
+  display: flex;
+  line-height: 1;
+  counter-reset: seatnum 0;
+}
+
+.index-header-seat-chairs.num+.index-header-seat-chairs.num {
+  padding-top: 5px;
+}
+
+.index-header-seat-chairs.num .index-header-seat-chair-item {
+  padding-top: 0;
+}
+
+.index-header-seat-chairs.num .index-header-seat-chair-item::before {
+  content: counter(seatnum);
+  counter-increment: seatnum +1;
+  font-size: 12px;
+}
+
+/* 区分每一个座位块 */
+.index-header-seat-chairs-block {
+  display: flex;
+  flex: 1;
+}
+
+.index-header-seat-chairs-block:nth-child(3n-2) {
+  justify-content: flex-end;
+}
+
+.index-header-seat-chairs-block:nth-child(3n-1)::after,
+.index-header-seat-chairs-block:nth-child(3n-1)::before {
+  content: '';
+  width: calc(100% / 10);
+}
+
+.index-header-seat-chairs-block:nth-child(3n-1) {
+  flex: 1.75;
+}
+
+.index-header-seat-chairs-block .index-header-seat-chair-item {
+  width: calc(100% / 8);
+}
+
+.index-header-seat-chairs-block:nth-child(3n-1) .index-header-seat-chair-item {
+  width: calc(100% / 12);
+}
+
+/* 中间座位区域 */
+.index-header-seat-chairs-content {
+  position: relative;
+}
+
+.index-header-seat-chairs-content::before,
+.index-header-seat-chairs-content::after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 20px;
+  height: 100%;
+  background-color: #bfbfbf;
+  border-radius: 4px;
+}
+
+.index-header-seat-chairs-content::before {
+  left: -25px;
+}
+
+.index-header-seat-chairs-content::after {
+  right: -25px;
+}
+
+.index-header-seat-chairs-content .index-header-seat-chairs::before,
+.index-header-seat-chairs-content .index-header-seat-chairs::after {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  content: attr(data-num);
+  width: 20px;
+  height: 100%;
+  color: #fff;
+  font-size: 12px;
+}
+
+.index-header-seat-chairs-content .index-header-seat-chairs::before {
+  left: -25px;
+}
+
+.index-header-seat-chairs-content .index-header-seat-chairs::after {
+  right: -25px;
+}
+
+/* 添加中间座位的空间 */
+.index-header-seat-chairs.behind:nth-child(6),
+.index-header-seat-chairs.behind:last-child {
+  padding-bottom: 10px;
+}
+
+
+/* 最后一排座位 */
+.index-header-seat-chairs.finally .index-header-seat-chair-item {
+  flex: 1;
+}
+
+/* 最后一排座位标识 */
+.index-header-seat-chairs-content+.index-header-seat-chairs.num .index-header-seat-chair-item {
+  padding-top: 5px;
+  width: calc(100% / 30);
+}
+
+
+/* 代表名单 */
+.index-list-title {
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 3;
+  background-color: #f5f5f5;
+}
+
+.index-list-content {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+}
+
+.index-list-nav {
+  display: flex;
+  padding-bottom: 80px;
+}
+
+.index-list-nav-item {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+  color: #0080ff;
+}
+
+.index-list-nav-item:hover {
+  text-decoration: underline;
+}
+
+.index-list-detail-item {
+  padding-left: 10px;
+  padding-bottom: 40px;
+}
+
+.index-list-detail-title {
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: #0080ff;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.index-list-detail-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 90px;
+}
+
+.index-list-detail-list-item {
+  padding-top: 20px;
+  padding-right: 10px;
+  width: calc(100% / 6);
+  line-height: 24px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.index-list-detail-list-item-btn {
+  display: none;
+  width: 40px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.index-list-detail-list-item-btn.checkin-btn {
+  cursor: pointer;
+  background-color: #ff6000;
+}
+
+.index-list-detail-list-item-btn.leave-btn {
+  cursor: not-allowed;
+  background-color: #a0dfbb;
+}
+
+.index-list-detail-list-item-btn.checkin-btn:hover {
+  background-color: #f7941e;
+}
+
+.index-list-detail-list-item-btn.checkin-btn:active {
+  background-color: #ff6000;
+}
+
+
+.index-list-detail-list-item-name {
+  display: inline-block;
+  margin: 0;
+  padding-right: 10px;
+  min-width: 42px;
+  /* text-align: justify;
+  text-align-last: justify; */
+}
+
+.index-list-detail-list-item.isself .index-list-detail-list-item-btn.checkin-btn,
+.index-list-detail-list-item.isself.signed .index-list-detail-list-item-seat,
+.index-list-detail-list-item.isleave .index-list-detail-list-item-btn.leave-btn {
+  display: inline-block;
+}
+
+.index-list-detail-list-item.isself .index-list-detail-list-item-seat,
+.index-list-detail-list-item.isself.signed .index-list-detail-list-item-btn,
+.index-list-detail-list-item.signed .index-list-detail-list-item-btn,
+.index-list-detail-list-item.isleave .index-list-detail-list-item-seat,
+.index-list-detail-list-item.isleave .index-list-detail-list-item-btn.checkin-btn {
+  display: none;
+}
+
+
+
+
+
+.dialog {
+  z-index: 5;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 540px;
+  transform: translate(-50%, -50%);
+}
+
+.dialog-title {
+  padding-bottom: 25px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #bf282a;
+  text-align: center;
+}
+
+.dialog-content {
+  position: relative;
+  margin: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+  text-align: center;
+}
+
+.dialog-close {
+  position: absolute;
+  right: -13px;
+  top: -13px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-image: url(../images/cancel.png);
+  background-color: #bf282a;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+
+.dialog-submit-btn {
+  position: relative;
+  margin-top: 19px;
+  margin-bottom: 30px;
+  padding: 5px 50px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+  background-image: url(../images/sign.jpg);
+  background-size: 100% 100%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(84, 0, 0, .4);
+  outline: none;
+}
+
+.dialog-submit-btn:active {
+  background: linear-gradient(#ff6500, #f7941e);
+}
+
+.dialog-submit-btn::before {
+  position: absolute;
+  width: calc(100% - 6px);
+  height: 20px;
+  border: 1px solid rgba(255, 255, 255, .3);
+}
+
+.dialog .check-inner {
+  margin: auto;
+  padding-top: 30px;
+}
+
+.dialog .check-inner-content {
+  margin: auto;
+  display: inline-block;
+  text-align: left;
+}
+
+
+.dialog .check-inner-content-item,
+.dialog .check-inner-content-href {
+  font-size: 18px;
+  color: #333;
+}
+
+.dialog .check-inner-content-item+.check-inner-content-item {
+  padding-top: 20px;
+}
+
+.dialog .check-inner-content-title {
+  min-width: 73px;
+}
+
+.dialog .check-inner-content-text-item {
+  width: 100%;
+}
+
+.mask {
+  z-index: 4;
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+}

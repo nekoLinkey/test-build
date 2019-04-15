@@ -1,0 +1,135 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/*------------------------------- 签到页面css ----------------------------------------------------------------------------*/
+.checkin {
+  position: relative;
+  min-width: 1200px;
+  min-height: 800px;
+  height: 100%;
+  background-image: url(../images/background_check.jpg);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.checkin .check-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 30px 45px;
+  width: 960px;
+  max-height: 720px;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+.checkin .logo {
+  width: 90px;
+  height: 90px;
+}
+
+.checkin-title {
+  margin-top: 24px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 45px;
+  background-image: url(../images/checkin-title.png);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.checkin-content {
+  position: relative;
+  padding-right: 240px;
+}
+
+.checkin .check-inner-content-title {
+  min-width: 100px;
+  color: #980700;
+}
+
+.checkin .check-inner-content-item {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.checkin .check-inner-content-text-item+.check-inner-content-text-item {
+  padding-top: 15px;
+}
+
+.checkin .check-inner-content-item,
+.checkin .check-inner-content-text {
+  font-size: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.checkin-content-code {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+
+.checkin-content-code-picbox {
+  padding: 6px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border: 1px solid #be282b;
+  box-sizing: border-box;
+}
+
+.checkin-content-code-img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.checkin-content-code-text {
+  margin-top: 10px;
+  margin-bottom: 18px;
+  line-height: 1;
+  color: #980700;
+  text-align: center;
+}
+
+.checkin-tips {
+
+}
+
+.checkin-tips .checkin-tips-info {
+  padding-top: 0;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+.checkin-tips .checkin-tips-text,
+.checkin-tips .check-inner-content-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  font-size: 16px;
+}
+
+.checkin-tips .checkin-tips-info + .checkin-tips-info,
+.checkin-tips .checkin-tips-info+.checkin-tips-info .check-inner-content-text {
+  flex: 1;
+  font-size: 14px;
+}
+
+.checkin-red-text {
+  color: #980700;
+}
+
+.checkin-blue-text {
+  color: #0047a9;
+}

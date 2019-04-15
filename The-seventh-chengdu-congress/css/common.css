@@ -1,0 +1,169 @@
+/* 主题色：#fde391 */
+
+html,
+body,
+ul,
+h5,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: SourceHanSansSC;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  box-sizing: border-box;
+}
+
+.clearfix::after,
+.clearfix::before {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.logo,
+.logo-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  position: relative;
+  background-image: url(../images/logo.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.logo-title {
+  width: 1200px;
+  background-image: url(../images/title.png);
+}
+
+/* check-inner */
+.check-inner {
+  background-image: url(../images/frame.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 20px solid #bf282a;
+  box-shadow: 0 0 16px rgba(84, 0, 0, .7);
+  box-sizing: border-box;
+}
+
+.check-inner-content {
+  width: 100%;
+}
+
+.check-inner-content-item {
+  display: flex;
+  margin: 0;
+}
+
+.check-inner-content-title,
+.check-inner-content-text {
+  margin: 0;
+}
+
+.check-inner-content-title {
+  position: relative;
+  padding-right: 20px;
+  vertical-align: top;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.check-inner-content-title::after {
+  position: absolute;
+  content: ':';
+  right: 10px;
+}
+
+
+
+.check-inner-content-href {
+  text-decoration: none;
+}
+
+.check-inner-content-href:hover {
+  text-decoration: underline;
+}
+
+.check-inner-content-text-item {
+  display: block;
+  padding-bottom: 10px;
+}
+
+
+
+/* Symbol 图标 */
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+/* iconfont 字体 */
+@font-face {
+  font-family: "iconfont";
+  src: url('iconfont.eot?t=1554951492513');
+  /* IE9 */
+  src: url('iconfont.eot?t=1554951492513#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAUAAAsAAAAAENwAAASzAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDIgqVCJBgATYCJAMUCwwABCAFhG0HSRvdDVGULU6S7IsE25j2QxdqKB10hN52XGI49kfwEbgXD/+/X/t9rrx5mCdIqt1XJ5EmYUkToZNo1hIt6f8lzFCdNpsNdxK3cS39euBrc2QpncTFOU9kRPRh6K4IFdph2nE6oCTWOu//Cuy+E4dNf27QMfHB1iB5sLl2awFGAQe053lYgsMtDTBACzSwLg3bJIdtjrj+2qcJ9JujDzm9vL6diUIzB/pufW51JjGPUkIMrb3JubK8xjlVm57TGuDF/fj4zzQmJDXTzjy7Obud3XfLeA/XtQG0/anp+oqMdUAhLnIjXX3ftO5a+vNaB7YBDQ4K6bu7HvpUQ9Nba6MfSVGXf/NEQ7MMAnpoLrulNV2Sa42DSoz6joe63PszB905WKr99n7MAPmD8tSzdr+nOgbGF0vpHvLGhiDnBYJ25J3gR4bnNbSUCqIK6+Uj8osSrz4Nv/Ys4saLqOvP9zE9+QOXEUSCXb8eeeNGFERqrNdgnXRovgYi4LVrEVevhmMiULZlLrd/7qpy9TWPk/lAGeDjGqzGSQmiKiuUX7yhVnPds2BEBPLyMOaJgo5+2tRcj+q7CkDz11QIDLT2hhdEZNctmQNxw8HFXBEwzh//3F0lA5qRmgUlfH5hYalMUKgpraSMzy/Q0xJJYYH3q2NNfsucel2XSn4eyC+Xl88XKOTny8vlFcmph9f1CaVFAEaJrTSEEVAmRjbps46Z95mXaMXSlsKqlurmLnNYPDvs7F3cNXwC3gnfJHG5pE1daassQ/jswO4hjhsrF+pp/4GoD4zPAp6Id2KWD42YyvRM9iUcsMuI4DtrghTUC8ZlIp7iXeKyvCEK/1L0jiqbXl7ZCgkSic0/clzC3kHCH5Fp1WyVCu0PAb4/dykkQCIODtqaCgkUCf9j96AKfAf/C8TBgV6/Luk66yUp3w4NO8F+xCmNDHuFJurpOk/nTiSk5TYrYY7akeKyELZMXwxNYSHtIxRpgWTUG8aite1Ml4YxAElVFTcRYwIvqeagBOIeJg8W8m9PdJwv5TrmpDhahqllpC9qP8KKg3la5hej7EhCvo0lgUTlCOhSfWurNELzp9vag8cLhPtJdK/CEGdgr3FMdN56MT0jTE0zMIVM5b1j777Hmvgg3vWYR9Xa6C+MWfQ90jIiPQrzKzSH2zzKMm5UJ7Hsv1EhU7rjVzfc3UPh5Q+K60IrFUUDTtJVfr8APcNXr3lreZuV6k1NDXKNL7CU0K/n6dES4+7345jifkKhjWkVatIxS81a88ACXadWA/apjdYBtd8ar+sHTNiuL0ofVh0WqGFUJzUZ9mnKedB1UwH0HrWa9s7YABt9ar/z4N1xwGL4M7cMrQJdsFvwHUqY4S9mXv8beRlZGemlk/6Y5T4loErKv37FBLM+zskrrhUFA5ZRDBfhDIwiApFRgE4heaiJrSyzx7mSQ3Fn5kQGWQqb2QVStZw5HCTBti/MUu//hrhSxJKVLPnh/EOZnL97YMKQcQ3g1ZLUWnIuoztUOM1OCjFgzmZIDHhSCEV6hYDc/MMCyFGQZLcoCVtGtFVmXYs0vi2+xlqmelntnjVS5ChRo9F5LKPIKMVwx/FZVBushfUOAAA=') format('woff2'),
+    url('iconfont.woff?t=1554951492513') format('woff'),
+    url('iconfont.ttf?t=1554951492513') format('truetype'),
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('iconfont.svg?t=1554951492513#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconpull_up:before {
+  content: "\e7c4";
+}
+
+/* 返回顶部 */
+.toTop {
+  position: fixed;
+  bottom: 90px;
+  right: 90px;
+  display: none;
+  cursor: pointer;
+  color: #d12525;
+}
+
+.toTop .iconfont {
+  font-size: 42px;
+}

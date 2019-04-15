@@ -1,0 +1,246 @@
+/* 首页版心定义 */
+body,
+html {
+  min-width: auto;
+}
+
+.wrapper {
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.icon {
+  width: .8em;
+}
+
+/* 首页座位表 */
+.index-header-seat {
+  padding-left: 14px;
+  padding-right: 14px;
+  flex: 1;
+}
+
+/* 座位表标题 */
+.index-header-seat-title {
+  position: relative;
+  margin: auto;
+  width: 70%;
+  line-height: 3;
+  font-size: 16px;
+  text-align: center;
+  background-color: #d2d2d2;
+}
+
+/* 座位表两边的斜角角 */
+.index-header-seat-title::before,
+.index-header-seat-title::after {
+  position: absolute;
+  content: '';
+  border-top: 48px solid #d2d2d2;
+}
+
+.index-header-seat-title::before {
+  left: -20px;
+  border-left: 20px solid transparent;
+}
+
+.index-header-seat-title::after {
+  right: -20px;
+  border-right: 20px solid transparent;
+}
+
+.index-header-seat-text {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* 座位表的椅子 */
+.index-header-seat-chairs {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+/* 座位的字体图标设置 */
+.index-header-seat-chair-item {
+  padding-top: 4px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* 主席台前的座位 */
+.index-header-seat-chairs.front {
+  flex-wrap: wrap;
+  width: calc(100% / 30 * 10);
+  box-sizing: border-box;
+}
+
+.index-header-seat-chairs.front .index-header-seat-chair-item {
+  width: calc(100% / 10);
+}
+
+.index-header-seat-chairs.front+.index-header-seat-chairs.num {
+  padding-top: 5px;
+}
+
+/* 座位表的数字标识, counter-reset 用来计数,自增*/
+.index-header-seat-chairs.num {
+  display: flex;
+  line-height: 1;
+  counter-reset: seatnum 0;
+}
+
+.index-header-seat-chairs.num+.index-header-seat-chairs.num {
+  padding-top: 5px;
+}
+
+.index-header-seat-chairs.num .index-header-seat-chair-item {
+  padding-top: 0;
+}
+
+.index-header-seat-chairs.num .index-header-seat-chair-item::before {
+  content: counter(seatnum);
+  counter-increment: seatnum +1;
+  font-size: 12px;
+}
+
+/* 区分每一个座位块 */
+.index-header-seat-chairs-block {
+  display: flex;
+  flex: 1;
+}
+
+
+.index-header-seat-chairs-block:nth-child(3n-2) {
+  justify-content: flex-end;
+}
+
+
+.index-header-seat-chairs-block:nth-child(3n-1) {
+  flex: 1.75;
+}
+
+.index-header-seat-chairs-block:nth-child(3n-1)::after,
+.index-header-seat-chairs-block:nth-child(3n-1)::before {
+  content: '';
+  width: calc(100% / 10);
+}
+
+.index-header-seat-chairs-block .index-header-seat-chair-item {
+  width: calc(100% / 8);
+}
+
+.index-header-seat-chairs-block:nth-child(3n-1) .index-header-seat-chair-item {
+  width: calc(100% / 12);
+}
+
+/* 中间座位区域 */
+.index-header-seat-chairs-content {
+  position: relative;
+}
+
+.index-header-seat-chairs-content::before,
+.index-header-seat-chairs-content::after {
+  position: absolute;
+  top: 0;
+  content: '';
+  height: 100%;
+  background-color: #bfbfbf;
+  border-radius: 4px;
+}
+
+.index-header-seat-chairs-content::before,
+.index-header-seat-chairs-content::after,
+.index-header-seat-chairs-content .index-header-seat-chairs::before,
+.index-header-seat-chairs-content .index-header-seat-chairs::after {
+  width: 14px;
+}
+
+.index-header-seat-chairs-content::before,
+.index-header-seat-chairs-content .index-header-seat-chairs::before {
+  left: -14px;
+}
+
+.index-header-seat-chairs-content::after,
+.index-header-seat-chairs-content .index-header-seat-chairs::after {
+  right: -14px;
+}
+
+.index-header-seat-chairs-content .index-header-seat-chairs::before,
+.index-header-seat-chairs-content .index-header-seat-chairs::after {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  content: attr(data-num);
+  height: 100%;
+  color: #fff;
+  font-size: 12px;
+}
+
+/* 添加中间座位的空间 */
+.index-header-seat-chairs.behind:nth-child(6),
+.index-header-seat-chairs.behind:last-child {
+  padding-bottom: 10px;
+}
+
+
+/* 最后一排座位 */
+.index-header-seat-chairs.finally .index-header-seat-chair-item {
+  flex: 1;
+}
+
+/* 最后一排座位标识 */
+.index-header-seat-chairs-content+.index-header-seat-chairs.num .index-header-seat-chair-item {
+  padding-top: 4px;
+  width: calc(100% / 30);
+}
+
+
+@media (min-width:1024px) {
+  .index-header-seat {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .index-header-seat-chair-item {
+    font-size: 18px !important;
+  }
+
+  .icon {
+    width: 2em;
+  }
+
+  .index-header-seat-chairs-content::before,
+  .index-header-seat-chairs-content::after,
+  .index-header-seat-chairs-content .index-header-seat-chairs::before,
+  .index-header-seat-chairs-content .index-header-seat-chairs::after {
+    width: 30px;
+  }
+
+  .index-header-seat-chairs-content::before,
+  .index-header-seat-chairs-content .index-header-seat-chairs::before {
+    left: -30px;
+  }
+
+  .index-header-seat-chairs-content::after,
+  .index-header-seat-chairs-content .index-header-seat-chairs::after {
+    right: -30px;
+  }
+}
+
+@media (min-width:640px) and (max-width:1024px) {
+  .icon {
+    width: 1em;
+  }
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- 同道研究院 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="同道研究院">
+  <meta name="description" content="上海同道信息技术有限公司-同道研究院">
+  <title>成都第七次代表大会</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class="index" >
+    <!-- logo放置处 -->
+    <a class="logo" href="javascript:;"></a>
+    <!-- 大标题文字放置处 -->
+    <div class="logo-title"></div>
+    <div class="container">
+      <header class="index-header">
+        <!-- 签到人数展示 -->
+        <div class="index-header-people">
+          <div class="index-header-people-item lawyer" data-title="实到律师代表人数" data-num="135"></div>
+          <div class="index-header-people-item guest" data-title="实到特邀代表人数" data-num="209"></div>
+        </div>
+        <!-- 座位展示区域 -->
+        <div class="index-header-seat">
+          <p class="index-header-seat-text ">座位表</p>
+          <!-- 主席栏 -->
+          <ul class="index-header-seat-chairs front" id="seatBox-front"></ul>
+          <!-- 数字标识，如需增加，添加标签即可自动自增 -->
+          <div class="index-header-seat-chairs num">
+            <ul class="index-header-seat-chairs-block">
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+            </ul>
+            <ul class="index-header-seat-chairs-block">
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+            </ul>
+            <ul class="index-header-seat-chairs-block">
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+            </ul>
+          </div>
+          <div class="index-header-seat-chairs num">
+            <ul class="index-header-seat-chairs-block">
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+            </ul>
+            <ul class="index-header-seat-chairs-block">
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+            </ul>
+            <ul class="index-header-seat-chairs-block">
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+              <li class="index-header-seat-chair-item"></li>
+            </ul>
+          </div>
+          <div class="index-header-seat-chairs-content">
+            <!-- 中间位置 -->
+            <div id="seatBox-behind"></div>
+            <!-- 最后一排 -->
+            <div class="index-header-seat-chairs finally" id="seatBox-finally"></div>
+          </div>
+          <!-- 数字标识 -->
+          <div class="index-header-seat-chairs num">
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+            <li class="index-header-seat-chair-item"></li>
+          </div>
+        </div>
+      </header>
+      <!-- 代表名单 -->
+      <div class="index-list">
+        <h5 class="index-list-title">代表名单</h5>
+        <div class="index-list-content">
+          <div class="index-list-nav" id="index-list-nav">
+            <!-- data-link 与下方id对应 -->
+            <a class="index-list-nav-item" data-link="#card-a">A</a>
+          </div>
+          <ul class="index-list-detail" id="index-list-detail">
+            <!-- 此处id与上方data-link对应 -->
+            <li class="index-list-detail-item" id="card-a">
+              <h5 class="index-list-detail-title">A</h5>
+              <ul class="index-list-detail-list">
+                <!-- 已签到添加signed,未签到是本人添加isself,请假添加isleave -->
+                <li class="index-list-detail-list-item isself isleave">
+                  <span class="index-list-detail-list-item-name">阿力木江.艾买提</span>
+                  <span class="index-list-detail-list-item-seat">(12排8号)</span>
+                  <button class="index-list-detail-list-item-btn checkin-btn" data-dialog type="button">签到</button>
+                  <button class="index-list-detail-list-item-btn leave-btn" disabled="disabled"
+                    type="button">请假</button>
+                </li>
+                <li class="index-list-detail-list-item isself signed">
+                  <span class="index-list-detail-list-item-name">艾买提</span>
+                  <span class="index-list-detail-list-item-seat">(12排8号)</span>
+                  <button class="index-list-detail-list-item-btn" data-dialog type="button">签到</button>
+                </li>
+                <li class="index-list-detail-list-item">
+                  <span class="index-list-detail-list-item-name">阿力</span>
+                  <span class="index-list-detail-list-item-seat">(12排8号)</span>
+                  <button class="index-list-detail-list-item-btn" data-dialog type="button">签到</button>
+                </li>
+                <li class="index-list-detail-list-item signed">
+                  <span class="index-list-detail-list-item-name">阿力</span>
+                  <span class="index-list-detail-list-item-seat">(12排8号)</span>
+                  <button class="index-list-detail-list-item-btn" data-dialog type="button">签到</button>
+                </li>
+                <li class="index-list-detail-list-item isself signed">
+                  <span class="index-list-detail-list-item-name">艾买提</span>
+                  <span class="index-list-detail-list-item-seat">(12排8号)</span>
+                  <button class="index-list-detail-list-item-btn" data-dialog type="button">签到</button>
+                </li>
+                <li class="index-list-detail-list-item">
+                  <span class="index-list-detail-list-item-name">阿力</span>
+                  <span class="index-list-detail-list-item-seat">(12排8号)</span>
+                  <button class="index-list-detail-list-item-btn" data-dialog type="button">签到</button>
+                </li>
+                <li class="index-list-detail-list-item signed">
+                  <span class="index-list-detail-list-item-name">阿力</span>
+                  <span class="index-list-detail-list-item-seat">(12排8号)</span>
+                  <button class="index-list-detail-list-item-btn" data-dialog type="button">签到</button>
+                </li>
+                <li class="index-list-detail-list-item isself signed">
+                  <span class="index-list-detail-list-item-name">艾买提</span>
+                  <span class="index-list-detail-list-item-seat">(12排8号)</span>
+                  <button class="index-list-detail-list-item-btn" data-dialog type="button">签到</button>
+                </li>
+                <li class="index-list-detail-list-item">
+                  <span class="index-list-detail-list-item-name">阿力</span>
+                  <span class="index-list-detail-list-item-seat">(12排8号)</span>
+                  <button class="index-list-detail-list-item-btn" data-dialog type="button">签到</button>
+                </li>
+                <li class="index-list-detail-list-item signed">
+                  <span class="index-list-detail-list-item-name">阿力</span>
+                  <span class="index-list-detail-list-item-seat">(12排8号)</span>
+                  <button class="index-list-detail-list-item-btn" data-dialog type="button">签到</button>
+                </li>
+                <li class="index-list-detail-list-item isself signed">
+                  <span class="index-list-detail-list-item-name">艾买提</span>
+                  <span class="index-list-detail-list-item-seat">(12排8号)</span>
+                  <button class="index-list-detail-list-item-btn" data-dialog type="button">签到</button>
+                </li>
+                <li class="index-list-detail-list-item">
+                  <span class="index-list-detail-list-item-name">阿力</span>
+                  <span class="index-list-detail-list-item-seat">(12排8号)</span>
+                  <button class="index-list-detail-list-item-btn" data-dialog type="button">签到</button>
+                </li>
+                <li class="index-list-detail-list-item signed">
+                  <span class="index-list-detail-list-item-name">阿力</span>
+                  <span class="index-list-detail-list-item-seat">(12排8号)</span>
+                  <button class="index-list-detail-list-item-btn" data-dialog type="button">签到</button>
+                </li>
+                <li class="index-list-detail-list-item isself signed">
+                  <span class="index-list-detail-list-item-name">艾买提</span>
+                  <span class="index-list-detail-list-item-seat">(12排8号)</span>
+                  <button class="index-list-detail-list-item-btn" data-dialog type="button">签到</button>
+                </li>
+                <li class="index-list-detail-list-item">
+                  <span class="index-list-detail-list-item-name">阿力</span>
+                  <span class="index-list-detail-list-item-seat">(12排8号)</span>
+                  <button class="index-list-detail-list-item-btn" data-dialog type="button">签到</button>
+                </li>
+                <li class="index-list-detail-list-item signed">
+                  <span class="index-list-detail-list-item-name">阿力</span>
+                  <span class="index-list-detail-list-item-seat">(12排8号)</span>
+                  <button class="index-list-detail-list-item-btn" data-dialog type="button">签到</button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 弹窗 -->
+  <!-- 弹窗遮罩层 -->
+  <div class="mask"></div>
+  <!-- 弹窗主体 -->
+  <div class="dialog">
+    <div class="dialog-content check-inner">
+      <!-- 关闭按钮 -->
+      <button class="dialog-close"></button>
+      <!-- 标题 -->
+      <div class="dialog-title">签 到 信 息</div>
+      <div class="dialog-body">
+        <!-- 正文 -->
+        <!-- 如果需要传入数据，js已经封装好，直接调用传入数据即可 -->
+        <div class="check-inner-content">
+          <div class="check-inner-content-item">
+            <p class="check-inner-content-title">姓名</p>
+            <p class="check-inner-content-text">张鑫锐</p>
+          </div>
+          <div class="check-inner-content-item">
+            <p class="check-inner-content-title">性别</p>
+            <p class="check-inner-content-text">男</p>
+          </div>
+          <div class="check-inner-content-item">
+            <p class="check-inner-content-title">分组</p>
+            <p class="check-inner-content-text">第一组</p>
+          </div>
+          <div class="check-inner-content-item">
+            <p class="check-inner-content-title">工作单位</p>
+            <p class="check-inner-content-text">上海市大成律师事务所</p>
+          </div>
+          <div class="check-inner-content-item">
+            <p class="check-inner-content-title">大会座位</p>
+            <p class="check-inner-content-text">
+              <span class="check-inner-content-text-item">15排15号 (3月28日-3月29日)</span>
+              <span class="check-inner-content-text-item">12排11号 (3月30日)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 确认按钮，如需传输数据,将传输的值放入input中，更改button的type为submit即可-->
+      <form action="./checkin.html" method="post">
+        <input type="hidden" value="">
+        <button class="dialog-submit-btn" type="submit">签到</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 返回顶部 -->
+  <div class="toTop">
+    <i class="iconfont iconpull_up"></i>
+  </div>
+
+
+
+  <script src="lib/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="lib/iconfont.js"></script>
+  <script>
+    seatChair(seatArr);
+  </script>
+</body>
+
+</html>
